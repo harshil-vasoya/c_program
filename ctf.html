@@ -1,0 +1,38 @@
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Set-Cookie: debugging=0; Path=/
+Content-Type: text/html; charset=utf-8
+Content-Length: 901
+Etag: W/"385-gTINAunADNRUA21S50piikBEiks"
+Date: Sat, 22 Jan 2022 06:56:23 GMT
+Via: 1.1 vegur
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Yoo dude</title>s
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+<h1>Login as admin</h1>
+<form method="post" action="/users/login" enctype='application/x-www-form-urlencoded'>
+<div class="form-group">
+<label for="inputUsername">Username</label>
+<input name="username" type="text" class="form-control" id="inputEmail" placeholder="You know this :)">
+</div>
+<div class="form-group">
+<label for="inputPassword">Password</label>
+<input name="password" type="password" class="form-control" id="inputPassword"
+placeholder="As far as I can tell, the password is encrypted">
+</div>
+</div>
+<button type="submit" class="btn btn-primary">Log in</button>
+</form>
+</body>
+
+</html>
